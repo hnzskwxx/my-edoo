@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stránka nenalezena | My-Edoo</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231d1d1f'/><circle cx='23' cy='9' r='3.5' fill='%232E4BEE'/><text x='16' y='23' text-anchor='middle' font-family='sans-serif' font-weight='600' font-size='15' fill='white'>e</text></svg>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="My-Edoo" />
+  <meta property="og:title" content="Stránka nenalezena | My-Edoo" />
+  <meta property="og:description" content="Tahle stránka na webu My-Edoo není. Přejděte na úvod a najděte kurzy, školení nebo e-book." />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:image" content="https://www.my-edoo.cz/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stránka nenalezena | My-Edoo" />
+  <meta name="twitter:description" content="Tahle stránka na webu My-Edoo není. Přejděte na úvod a najděte kurzy, školení nebo e-book." />
+  <meta name="twitter:image" content="https://www.my-edoo.cz/assets/og-image.png" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <noscript><style>.reveal{opacity:1;transform:none}@media(max-width:860px){.nav-links{position:static;opacity:1;visibility:visible;transform:none;flex-direction:row;flex-wrap:wrap;gap:14px;padding:0;background:none;border:0;box-shadow:none}.nav-links a{padding:4px 0;border:0}.nav-burger{display:none}.nav{height:auto}.nav-in{flex-wrap:wrap;padding:8px 0}}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#top">Přejít na obsah</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a href="index.html" aria-label="My-Edoo"><img src="assets/logo.png" alt="My-Edoo" width="244" height="78" /></a>
+      <nav class="nav-links" id="navLinks" aria-label="Hlavní navigace">
+        <a href="index.html">Domů</a>
+        <a href="kurzy.html">Kurzy</a>
+        <a href="skoleni-ai.html">Školení</a>
+        <a href="o-nas.html">O nás</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <a class="nav-cta" href="kontakt.html">Nezávazná poptávka</a>
+      <button class="nav-burger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="center" style="padding-top:clamp(90px,16vh,170px);">
+      <div class="narrow">
+        <p class="eyebrow">Chyba 404</p>
+        <h1 class="display" style="margin-top:16px;">Tuhle stránku<br />jsme nenašli.</h1>
+        <p class="lead" style="max-width:44ch;margin:26px auto 0;">
+          Odkaz je nejspíš zastaralý nebo v adrese vznikl překlep.
+          Zkuste se vrátit na úvod nebo rovnou na kurzy.
+        </p>
+        <div class="actions" style="justify-content:center;margin-top:36px;">
+          <a class="btn btn-primary" href="index.html">Zpět na úvod</a>
+          <a class="link" href="kurzy.html">Prohlédnout kurzy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <img src="assets/logo.png" alt="My-Edoo" width="244" height="78" loading="lazy" decoding="async" />
+          <p>Hotová povinná školení pro firmy: kyberbezpečnost podle NIS2 a bezpečné používání AI.</p>
+        </div>
+        <div class="foot-col">
+          <h3>Navigace</h3>
+          <a href="index.html">Domů</a>
+          <a href="kurzy.html">Kurzy</a>
+          <a href="skoleni-ai.html">Školení</a>
+          <a href="ebook.html">E-book</a>
+          <a href="o-nas.html">O nás</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="foot-col">
+          <h3>Kontakt</h3>
+          <a href="mailto:myedooofficial@gmail.com">myedooofficial@gmail.com</a>
+          <a href="tel:+420728984126">+420 728 984 126</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Andrea Procházková · IČO 05595266 · Kurzova 2222/16, 155 00 Praha – Stodůlky</span>
+        <span class="legal-links">
+          <a href="obchodni-podminky.html">Obchodní podmínky</a>
+          <a href="reklamacni-rad.html">Reklamační řád</a>
+          <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- Mobilní menu ----
+    (function () {
+      var nav = document.querySelector('.nav');
+      var burger = nav && nav.querySelector('.nav-burger');
+      if (!nav || !burger) return;
+      function zavri() {
+        nav.classList.remove('open');
+        document.documentElement.classList.remove('nav-open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Otevřít menu');
+      }
+      burger.addEventListener('click', function () {
+        var otevreno = nav.classList.toggle('open');
+        // zamkne rolování stránky, dokud je menu otevřené
+        document.documentElement.classList.toggle('nav-open', otevreno);
+        burger.setAttribute('aria-expanded', otevreno ? 'true' : 'false');
+        burger.setAttribute('aria-label', otevreno ? 'Zavřít menu' : 'Otevřít menu');
+      });
+      Array.prototype.forEach.call(nav.querySelectorAll('.nav-links a'), function (a) {
+        a.addEventListener('click', zavri);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('open')) { zavri(); burger.focus(); }
+      });
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('open') && !nav.contains(e.target)) { zavri(); }
+      });
+    })();
+  </script>
+</body>
+</html>

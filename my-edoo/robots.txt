@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Interní podklady na webu nejsou (kurzy leží mimo složku webu).
+# Demo kurzu je veřejné záměrně.
+
+Sitemap: https://www.my-edoo.cz/sitemap.xml

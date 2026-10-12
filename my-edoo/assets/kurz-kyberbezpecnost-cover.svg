@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1754" width="1240" height="1754"
+     role="img" aria-label="Obálka — Kyberbezpečnost pro zaměstnance">
+  <defs>
+    <style>
+      text { font-family: 'Inter','Inter var',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+      .meta { font-size: 23px;  font-weight: 600; letter-spacing: 5.5px; }
+      .t1   { font-size: 258px; font-weight: 200; letter-spacing: -11px; }
+      .t2   { font-size: 175px; font-weight: 600; letter-spacing: -9px; }
+      .sub  { font-size: 42px;  font-weight: 300; letter-spacing: -0.4px; }
+      .num  { font-size: 62px;  font-weight: 600; letter-spacing: -2px; }
+      .lbl  { font-size: 21px;  font-weight: 500; letter-spacing: 3px; }
+      .foot { font-size: 25px;  font-weight: 400; letter-spacing: 0.2px; }
+    </style>
+  </defs>
+
+  <rect width="1240" height="1754" fill="#0E0E10"/>
+
+  <text class="meta" x="100" y="112" fill="#8A8A90">MY-EDOO</text>
+  <text class="meta" x="1140" y="112" fill="#8A8A90" text-anchor="end">KURZ</text>
+
+  <g fill="#D92D20">
+    <rect x="994" y="250" width="14" height="14"/>
+    <rect x="1038" y="250" width="14" height="14"/>
+    <rect x="1082" y="250" width="14" height="14"/>
+    <rect x="1126" y="250" width="14" height="14"/>
+    <rect x="994" y="294" width="14" height="14"/>
+    <rect x="1038" y="294" width="14" height="14"/>
+    <rect x="1082" y="294" width="14" height="14"/>
+    <rect x="1126" y="294" width="14" height="14"/>
+  </g>
+
+  <text class="t1" x="94" y="656" fill="#FFFFFF">Kyber</text>
+
+  <rect x="0" y="690" width="1240" height="280" fill="#D92D20"/>
+  <text class="t2" x="94" y="878" fill="#FFFFFF">bezpečnost</text>
+
+  <text class="sub" x="100" y="1082" fill="#9A9AA0">Doložitelné školení podle zákona č. 264/2025 Sb.</text>
+
+  <rect x="100" y="1360" width="1040" height="1" fill="#FFFFFF24"/>
+  <text class="num" x="100" y="1452" fill="#FFFFFF">8</text>
+  <text class="lbl" x="100" y="1496" fill="#8A8A90">MODULŮ</text>
+  <text class="num" x="447" y="1452" fill="#FFFFFF">45–60</text>
+  <text class="lbl" x="447" y="1496" fill="#8A8A90">MINUT</text>
+  <text class="num" x="794" y="1452" fill="#FFFFFF">80 %</text>
+  <text class="lbl" x="794" y="1496" fill="#8A8A90">HRANICE TESTU</text>
+
+  <rect x="100" y="1596" width="1040" height="1" fill="#FFFFFF24"/>
+  <text class="foot" x="100" y="1662" fill="#8A8A90">Zaměstnanci i vedení firmy.</text>
+  <text class="foot" x="1140" y="1662" fill="#D92D20" text-anchor="end">my-edoo</text>
+</svg>

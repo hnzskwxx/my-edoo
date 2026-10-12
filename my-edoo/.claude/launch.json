@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "my-edoo",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8751", "--directory", "C:/Users/sefzi/OneDrive/Plocha/my-edoo"],
+      "port": 8751
+    }
+  ]
+}
