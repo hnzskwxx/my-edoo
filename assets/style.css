@@ -352,6 +352,8 @@
       .nav.open .nav-links a:nth-child(2) { transition-delay: .11s; }
       .nav.open .nav-links a:nth-child(3) { transition-delay: .15s; }
       .nav.open .nav-links a:nth-child(4) { transition-delay: .19s; }
+      .nav.open .nav-links a:nth-child(5) { transition-delay: .23s; }
+      .nav.open .nav-links a:nth-child(6) { transition-delay: .27s; }
       .nav-links a:last-child { border-bottom: 0; }
       .nav-links a[aria-current="page"] { font-weight: 600; color: var(--accent); }
 
@@ -624,6 +626,133 @@ details.acc .acc-body { padding:0 0 22px; color:var(--ink-2); max-width:68ch; fo
 .shot figcaption { margin-top: 14px; font-size: .9rem; color: var(--ink-2); text-align: center; }
 
 @media (max-width: 860px) { .trio, .shots { grid-template-columns: 1fr; } }
+
+/* ============ BLOG ============ */
+.page-blog section { padding: clamp(56px, 8vh, 100px) 0; }
+.page-blog .hero { padding-top: clamp(60px, 9vh, 96px); padding-bottom: 0; }
+.page-blog .hero .lead { max-width: 44ch; }
+@media (max-width: 560px) { .page-blog section { padding: 44px 0; } }
+
+/* přehled článků — editorial kompozice (jen /blog/index.html) */
+.blog-index { --bx-gap: clamp(28px, 4vw, 56px); }
+
+.bx-intro { padding: clamp(48px, 8vh, 96px) 0 0; }
+.bx-intro-in {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px 56px; align-items: end;
+  padding-bottom: clamp(28px, 4vh, 40px); border-bottom: 1px solid var(--line);
+}
+.bx-kicker { font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.bx-title { margin-top: 14px; max-width: 13ch; font-size: clamp(2.3rem, 5.2vw, 4rem); letter-spacing: -.045em; line-height: 1.02; }
+.bx-sub { justify-self: end; max-width: 34ch; font-size: clamp(1.02rem, 1.5vw, 1.2rem); line-height: 1.5; color: var(--ink-2); }
+
+.bx-section { padding: clamp(36px, 5vh, 56px) 0 0; }
+.bx-more-stories { padding: clamp(56px, 8vh, 96px) 0 clamp(72px, 10vh, 120px); }
+.bx-label {
+  margin-bottom: 36px; padding-bottom: 16px; border-bottom: 1px solid var(--line);
+  font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; line-height: 1.4;
+}
+
+/* článek v přehledu: celá plocha je klikatelná přes odkaz v nadpisu */
+.bx-story { position: relative; }
+.bx-media { overflow: hidden; border-radius: 12px; background: var(--bg-alt); }
+.bx-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.bx-meta { display: flex; flex-wrap: wrap; align-items: center; row-gap: 4px; font-size: .8rem; color: var(--ink-2); }
+.bx-meta > * + *::before { content: "·"; margin: 0 .55em; color: #b0b0b6; }
+.bx-cat { color: var(--accent); font-weight: 600; }
+.bx-h { margin-top: 12px; font-size: clamp(1.3rem, 2vw, 1.6rem); letter-spacing: -.03em; line-height: 1.15; }
+.bx-h a { transition: color .2s ease; }
+.bx-h a::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 14px; }
+.bx-h a:focus-visible { outline: none; }
+.bx-h a:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 8px; }
+.bx-excerpt { margin-top: 12px; font-size: .97rem; line-height: 1.55; color: var(--ink-2); }
+.bx-more { display: inline-flex; align-items: center; gap: .3em; margin-top: 18px; font-size: .95rem; font-weight: 600; color: var(--accent); }
+.bx-more::after { content: "›"; font-size: 1.25em; line-height: 0; transition: transform .25s var(--ease); }
+.bx-story:hover .bx-media img { transform: scale(1.035); }
+.bx-story:hover .bx-h a { color: var(--accent); }
+.bx-story:hover .bx-more::after { transform: translateX(3px); }
+
+/* hlavní článek: vizuál zhruba na 60 % šířky, text vedle */
+.bx-feature { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: var(--bx-gap); align-items: center; }
+.bx-feature .bx-media { aspect-ratio: 4 / 3; }
+.bx-feature .bx-h { margin-top: 16px; font-size: clamp(1.9rem, 3.4vw, 2.8rem); letter-spacing: -.04em; line-height: 1.06; }
+.bx-feature .bx-excerpt { margin-top: 18px; max-width: 42ch; font-size: 1.07rem; }
+.bx-feature .bx-more { margin-top: 26px; }
+
+/* další články: asymetrický grid 7/5, ve druhé řadě zrcadlově 5/7 */
+.bx-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 64px var(--bx-gap); }
+.bx-wide { grid-column: span 7; }
+.bx-narrow { grid-column: span 5; }
+.bx-grid .bx-media { height: clamp(240px, 27vw, 340px); }
+.bx-grid .bx-text { margin-top: 22px; max-width: 52ch; }
+.bx-grid .bx-excerpt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+
+/* závěrečná výzva */
+.bx-cta { padding: clamp(48px, 7vh, 72px) 0; background: var(--bg-alt); }
+.bx-cta-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; }
+.bx-cta-text { max-width: 30ch; font-size: clamp(1.25rem, 2.2vw, 1.6rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.25; }
+.bx-cta-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; }
+
+@media (max-width: 960px) {
+  .bx-intro-in { grid-template-columns: 1fr; }
+  .bx-sub { justify-self: start; }
+  .bx-feature { grid-template-columns: 1fr; gap: 28px; }
+  .bx-feature .bx-media { aspect-ratio: 16 / 10; }
+  .bx-feature .bx-excerpt { max-width: 60ch; }
+  .bx-wide, .bx-narrow { grid-column: span 6; }
+}
+@media (max-width: 640px) {
+  .bx-intro { padding-top: 40px; }
+  .bx-title { font-size: 2.3rem; }
+  .bx-feature .bx-media { aspect-ratio: 4 / 3; }
+  .bx-feature .bx-h { font-size: 1.75rem; }
+  .bx-feature .bx-excerpt { font-size: 1rem; }
+  .bx-more-stories { padding: 56px 0 64px; }
+  .bx-label { margin-bottom: 28px; }
+  .bx-grid { grid-template-columns: 1fr; gap: 48px; }
+  .bx-wide, .bx-narrow { grid-column: auto; }
+  .bx-grid .bx-media { height: auto; aspect-ratio: 4 / 3; }
+  .bx-grid .bx-text { margin-top: 18px; }
+  .bx-cta-links { width: 100%; flex-direction: column; align-items: stretch; }
+  .bx-cta-links .btn { width: 100%; }
+  .bx-cta-links .link { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bx-media img, .bx-h a, .bx-more::after { transition: none; }
+  .bx-story:hover .bx-media img, .bx-story:hover .bx-more::after { transform: none; }
+}
+
+/* článek */
+.back-link { display: inline-flex; align-items: center; gap: .3em; min-height: 44px;
+  color: var(--accent); font-weight: 600; font-size: .95rem; }
+.back-link::before { content: "‹"; font-size: 1.25em; line-height: 0; }
+.article-cover { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover;
+  margin-top: 40px; border-radius: 12px; background: var(--bg-alt); }
+@media (max-width: 640px) { .article-cover { aspect-ratio: 4 / 3; margin-top: 32px; } }
+.prose { margin-top: 12px; }
+.prose h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); letter-spacing: -.025em; line-height: 1.2;
+  margin: 52px 0 0; }
+.prose p { margin-top: 16px; line-height: 1.7; }
+.prose ul, .prose ol { margin: 16px 0 0; padding-left: 1.3em; display: grid; gap: 10px; line-height: 1.65; }
+.prose li::marker { color: var(--ink-2); }
+.prose strong { font-weight: 600; }
+.prose a { color: var(--accent); font-weight: 600; }
+.sources { margin-top: 52px; padding-top: 26px; border-top: 1px solid var(--line);
+  font-size: .9rem; color: var(--ink-2); }
+.sources h2 { font-size: .74rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.sources ul { list-style: none; margin-top: 12px; display: grid; gap: 8px; }
+.sources a { color: var(--accent); font-weight: 600; }
+.sources p { margin-top: 16px; line-height: 1.6; }
+.blog-cta { margin-top: 64px; background: var(--bg-alt); border-radius: 20px; padding: 36px; }
+.blog-cta h2 { font-size: 1.35rem; letter-spacing: -.025em; line-height: 1.2; }
+.blog-cta p { color: var(--ink-2); margin-top: 12px; }
+.blog-cta .actions { margin-top: 24px; }
+@media (max-width: 560px) {
+  .prose h2 { margin-top: 40px; }
+  .blog-cta { padding: 26px 22px; margin-top: 48px; }
+  .blog-cta .actions { flex-direction: column; align-items: stretch; }
+  .blog-cta .btn { width: 100%; }
+  .blog-cta .link { justify-content: center; }
+}
 
 /* hero e-booku je dvousloupcový, ne centrovaný jako na homepage */
 .page-ebook .hero .display { max-width: none; margin-inline: 0; }

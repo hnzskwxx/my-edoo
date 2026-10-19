@@ -4,3 +4,6 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), interest-cohort=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://form.simpleshop.cz; font-src 'self' data:; connect-src 'self' https://form.simpleshop.cz; frame-src 'self' https://form.simpleshop.cz https://docs.google.com; form-action 'self' https://docs.google.com; frame-ancestors 'self'; base-uri 'self'; object-src 'none'
+
+/demo-kyberbezpecnost/*
+  X-Robots-Tag: noindex

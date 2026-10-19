@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 
 # Interní podklady na webu nejsou (kurzy leží mimo složku webu).
-# Demo kurzu je veřejné záměrně.
+# Demo kurzu (/demo-kyberbezpecnost/) je veřejné, ale nemá se indexovat:
+# řeší to meta robots noindex a hlavička X-Robots-Tag v _headers.
+# Procházení demo složky tu proto nezakazujeme, jinak by vyhledávač noindex neviděl.
 
 Sitemap: https://www.my-edoo.cz/sitemap.xml
