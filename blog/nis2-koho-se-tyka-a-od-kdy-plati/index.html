@@ -73,63 +73,79 @@
     </div>
   </header>
 
-  <main id="top">
-    <article class="page-blog">
-      <section>
-        <div class="narrow">
-          <header class="article-head">
-            <a class="back-link" href="../index.html">Blog</a>
-            <p class="eyebrow" style="margin-top:28px;"><time datetime="2026-10-16">16. října 2026</time></p>
-            <h1 class="headline" style="margin-top:12px;">NIS2: koho se týká a od kdy platí</h1>
-            <p class="lead" style="margin-top:22px;">Evropská směrnice NIS2 výrazně rozšířila okruh firem, které musí řešit kybernetickou bezpečnost jako zákonnou povinnost. Mnoho z nich o tom přitom zatím neví. V článku najdete, podle čeho zjistíte, jestli se povinnosti týkají i vás, a co dělat jako první.</p>
-          </header>
+  <main id="top" class="article-page">
+    <article>
+      <header class="ar-head">
+        <div class="wrap">
+          <a class="back-link" href="../index.html">Všechny články</a>
+          <p class="bx-meta ar-meta"><span class="bx-cat">NIS2</span><time datetime="2026-10-16">16. října 2026</time><span>4 min čtení</span></p>
+          <h1 class="ar-title">NIS2: koho se týká a od kdy platí</h1>
+          <p class="ar-perex">Evropská směrnice NIS2 výrazně rozšířila okruh firem, které musí řešit kybernetickou bezpečnost jako zákonnou povinnost. Mnoho z nich o tom přitom zatím neví. V článku najdete, podle čeho zjistíte, jestli se povinnosti týkají i vás, a co dělat jako první.</p>
+        </div>
+      </header>
 
-          <img class="article-cover" src="../../assets/blog/scenes/nis2-koho-se-tyka-a-od-kdy-plati.svg" alt="Prosklená fasáda moderní kancelářské budovy v perspektivě" width="1200" height="900" decoding="async" fetchpriority="high" style="object-position:35% 50%" />
+      <div class="wrap">
+        <img class="article-cover" src="../../assets/blog/scenes/nis2-koho-se-tyka-a-od-kdy-plati.svg" alt="Prosklená fasáda moderní kancelářské budovy v perspektivě" width="1200" height="900" decoding="async" fetchpriority="high" style="object-position:35% 50%" />
+      </div>
 
+      <div class="wrap ar-layout">
+        <nav class="ar-toc" aria-label="Obsah článku">
+          <p class="ar-toc-title">V článku</p>
+          <ol>
+              <li><a href="#co-je-nis2">Co je NIS2</a></li>
+              <li><a href="#koho-se-povinnosti-tykaji">Koho se povinnosti týkají</a></li>
+              <li><a href="#od-kdy-povinnosti-plati">Od kdy povinnosti platí</a></li>
+              <li><a href="#jak-zjistit-jestli-se-to-tyka-vas">Jak zjistit, jestli se to týká vás</a></li>
+              <li><a href="#tyka-se-vas-to-i-kdyz-povinnou-osobou-nejste">Týká se vás to, i když povinnou osobou nejste</a></li>
+              <li><a href="#co-udelat-hned-ted">Co udělat hned teď</a></li>
+          </ol>
+        </nav>
+
+        <div class="ar-main">
           <div class="prose">
-        <h2>Co je NIS2</h2>
-        <p>NIS2 je evropská směrnice (EU) 2022/2555 o kybernetické bezpečnosti, která nahradila původní směrnici NIS. Členské státy ji převádějí do svých zákonů. V Česku ji provádí zákon č. 264/2025 Sb., o kybernetické bezpečnosti, který nahradil dřívější zákon č. 181/2014 Sb. Podrobnosti upravují vyhlášky NÚKIB, především vyhláška č. 408/2025 Sb. o regulovaných službách a vyhlášky č. 409/2025 Sb. a č. 410/2025 Sb. o bezpečnostních opatřeních.</p>
-        <p>Hlavní změna oproti dřívějšku: povinnosti se už netýkají jen několika stovek provozovatelů kritické infrastruktury. Pod regulaci spadají tisíce středních a velkých firem z mnoha odvětví, a s nimi i řada obcí a veřejných institucí.</p>
+            <h2 id="co-je-nis2">Co je NIS2</h2>
+            <p>NIS2 je evropská směrnice (EU) 2022/2555 o kybernetické bezpečnosti, která nahradila původní směrnici NIS. Členské státy ji převádějí do svých zákonů. V Česku ji provádí zákon č. 264/2025 Sb., o kybernetické bezpečnosti, který nahradil dřívější zákon č. 181/2014 Sb. Podrobnosti upravují vyhlášky NÚKIB, především vyhláška č. 408/2025 Sb. o regulovaných službách a vyhlášky č. 409/2025 Sb. a č. 410/2025 Sb. o bezpečnostních opatřeních.</p>
+            <p>Hlavní změna oproti dřívějšku: povinnosti se už netýkají jen několika stovek provozovatelů kritické infrastruktury. Pod regulaci spadají tisíce středních a velkých firem z mnoha odvětví, a s nimi i řada obcí a veřejných institucí.</p>
 
-        <h2>Koho se povinnosti týkají</h2>
-        <p>Zda je vaše firma tzv. povinnou osobou, se posuzuje podle několika kritérií zároveň. Zjednodušeně jde o tři otázky:</p>
-        <ul>
-          <li><strong>V jakém odvětví podnikáte.</strong> Zákon vyjmenovává 15 odvětví: veřejná správa, energetika, výrobní průmysl, potravinářský průmysl, chemický průmysl, vodní hospodářství, odpadové hospodářství, doprava, digitální infrastruktura a služby, finanční trh, zdravotnictví, věda, výzkum a vzdělávání, poštovní a kurýrní služby, obranný průmysl a vesmírný průmysl (§ 4 zákona). Konkrétní regulované služby v nich vymezuje příloha vyhlášky č. 408/2025 Sb.</li>
-          <li><strong>Jak je firma velká.</strong> Zákon se týká středních a velkých podniků podle doporučení Evropské komise 2003/361/ES. Malý podnik má méně než 50 zaměstnanců a jeho roční obrat nebo bilanční suma nepřesahuje 10 milionů eur. Kdo má 50 a více zaměstnanců, nebo obrat i bilanční sumu nad 10 milionů eur, je už středním podnikem.</li>
-          <li><strong>Jaký je váš význam pro fungování státu nebo trhu.</strong> Některé subjekty spadají pod regulaci bez ohledu na velikost, například jediný poskytovatel dané služby v Česku, poskytovatel služby, jejíž narušení může způsobit závažný zásah do života více než 125 000 osob, nebo subjekt kritické infrastruktury (§ 5 zákona). Registraci těchto subjektů zahajuje NÚKIB sám, z moci úřední (§ 6 odst. 3 zákona).</li>
-        </ul>
-        <p>Podle výsledku se firma zařadí do režimu vyšších, nebo nižších povinností (§ 8 zákona). Do vyššího režimu patří poskytovatelé, kteří jsou pro Česko značně ekonomicky, společensky nebo bezpečnostně významní, ostatní spadají do nižšího. Konkrétní rozdělení služeb do režimů stanoví vyhláška č. 408/2025 Sb. Bezpečnostní opatření pro vyšší režim upravuje vyhláška č. 409/2025 Sb., pro nižší režim vyhláška č. 410/2025 Sb.</p>
+            <h2 id="koho-se-povinnosti-tykaji">Koho se povinnosti týkají</h2>
+            <p>Zda je vaše firma tzv. povinnou osobou, se posuzuje podle několika kritérií zároveň. Zjednodušeně jde o tři otázky:</p>
+            <ul>
+              <li><strong>V jakém odvětví podnikáte.</strong> Zákon vyjmenovává 15 odvětví: veřejná správa, energetika, výrobní průmysl, potravinářský průmysl, chemický průmysl, vodní hospodářství, odpadové hospodářství, doprava, digitální infrastruktura a služby, finanční trh, zdravotnictví, věda, výzkum a vzdělávání, poštovní a kurýrní služby, obranný průmysl a vesmírný průmysl (§ 4 zákona). Konkrétní regulované služby v nich vymezuje příloha vyhlášky č. 408/2025 Sb.</li>
+              <li><strong>Jak je firma velká.</strong> Zákon se týká středních a velkých podniků podle doporučení Evropské komise 2003/361/ES. Malý podnik má méně než 50 zaměstnanců a jeho roční obrat nebo bilanční suma nepřesahuje 10 milionů eur. Kdo má 50 a více zaměstnanců, nebo obrat i bilanční sumu nad 10 milionů eur, je už středním podnikem.</li>
+              <li><strong>Jaký je váš význam pro fungování státu nebo trhu.</strong> Některé subjekty spadají pod regulaci bez ohledu na velikost, například jediný poskytovatel dané služby v Česku, poskytovatel služby, jejíž narušení může způsobit závažný zásah do života více než 125 000 osob, nebo subjekt kritické infrastruktury (§ 5 zákona). Registraci těchto subjektů zahajuje NÚKIB sám, z moci úřední (§ 6 odst. 3 zákona).</li>
+            </ul>
+            <p>Podle výsledku se firma zařadí do režimu vyšších, nebo nižších povinností (§ 8 zákona). Do vyššího režimu patří poskytovatelé, kteří jsou pro Česko značně ekonomicky, společensky nebo bezpečnostně významní, ostatní spadají do nižšího. Konkrétní rozdělení služeb do režimů stanoví vyhláška č. 408/2025 Sb. Bezpečnostní opatření pro vyšší režim upravuje vyhláška č. 409/2025 Sb., pro nižší režim vyhláška č. 410/2025 Sb.</p>
 
-        <h2>Od kdy povinnosti platí</h2>
-        <p>Pro firmu jsou důležitá tato data a lhůty:</p>
-        <ul>
-          <li><strong>Účinnost zákona:</strong> 1. listopadu 2025. Ve stejný den nabyly účinnosti i prováděcí vyhlášky.</li>
-          <li><strong>Ohlášení regulované služby:</strong> do 60 dnů ode dne, kdy firma začala splňovat podmínky (§ 6 zákona). Kdo je splňoval už 1. listopadu 2025, měl lhůtu do 31. prosince 2025.</li>
-          <li><strong>Kontaktní údaje:</strong> do 30 dnů od doručení rozhodnutí NÚKIB o registraci služby (§ 11 zákona).</li>
-          <li><strong>Bezpečnostní opatření a hlášení incidentů:</strong> nejpozději do 1 roku od doručení rozhodnutí o registraci (§ 13 a § 15 zákona).</li>
-        </ul>
-        <p>Lhůta pro ohlášení běží od chvíle, kdy firma podmínky splní, ne od chvíle, kdy ji na to někdo upozorní. Neohlášení služby je přestupek, za který hrozí vysoká pokuta. Pokud jste lhůtu propásli, ohlaste službu co nejdřív.</p>
+            <h2 id="od-kdy-povinnosti-plati">Od kdy povinnosti platí</h2>
+            <p>Pro firmu jsou důležitá tato data a lhůty:</p>
+            <ul>
+              <li><strong>Účinnost zákona:</strong> 1. listopadu 2025. Ve stejný den nabyly účinnosti i prováděcí vyhlášky.</li>
+              <li><strong>Ohlášení regulované služby:</strong> do 60 dnů ode dne, kdy firma začala splňovat podmínky (§ 6 zákona). Kdo je splňoval už 1. listopadu 2025, měl lhůtu do 31. prosince 2025.</li>
+              <li><strong>Kontaktní údaje:</strong> do 30 dnů od doručení rozhodnutí NÚKIB o registraci služby (§ 11 zákona).</li>
+              <li><strong>Bezpečnostní opatření a hlášení incidentů:</strong> nejpozději do 1 roku od doručení rozhodnutí o registraci (§ 13 a § 15 zákona).</li>
+            </ul>
+            <p>Lhůta pro ohlášení běží od chvíle, kdy firma podmínky splní, ne od chvíle, kdy ji na to někdo upozorní. Neohlášení služby je přestupek, za který hrozí vysoká pokuta. Pokud jste lhůtu propásli, ohlaste službu co nejdřív.</p>
 
-        <h2>Jak zjistit, jestli se to týká vás</h2>
-        <p>Nejrychlejší cesta je předběžné posouzení pomocí kalkulačky na <a href="https://portal.nukib.gov.cz/" target="_blank" rel="noopener">Portálu NÚKIB</a> (Národní úřad pro kybernetickou a informační bezpečnost). Přes stejný portál se regulovaná služba i ohlašuje. Výsledek kalkulačky je orientační a o registraci rozhoduje NÚKIB. Pokud vám vyjde, že regulovaní nejste, uložte si záznam o tom, jak jste postupovali.</p>
-        <p>Připravte si předem:</p>
-        <ul>
-          <li>přesný popis činností, které firma vykonává (nejen hlavní obor podle živnostenského listu),</li>
-          <li>počet zaměstnanců, obrat a bilanční sumu za poslední účetní období,</li>
-          <li>informace o propojených a partnerských podnicích, protože se jejich údaje mohou sčítat.</li>
-        </ul>
-        <p>Pokud si výsledkem nejste jistí, nechte ho posoudit právníkem. Chybné zařazení se nevyplácí ani jedním směrem.</p>
+            <h2 id="jak-zjistit-jestli-se-to-tyka-vas">Jak zjistit, jestli se to týká vás</h2>
+            <p>Nejrychlejší cesta je předběžné posouzení pomocí kalkulačky na <a href="https://portal.nukib.gov.cz/" target="_blank" rel="noopener">Portálu NÚKIB</a> (Národní úřad pro kybernetickou a informační bezpečnost). Přes stejný portál se regulovaná služba i ohlašuje. Výsledek kalkulačky je orientační a o registraci rozhoduje NÚKIB. Pokud vám vyjde, že regulovaní nejste, uložte si záznam o tom, jak jste postupovali.</p>
+            <p>Připravte si předem:</p>
+            <ul>
+              <li>přesný popis činností, které firma vykonává (nejen hlavní obor podle živnostenského listu),</li>
+              <li>počet zaměstnanců, obrat a bilanční sumu za poslední účetní období,</li>
+              <li>informace o propojených a partnerských podnicích, protože se jejich údaje mohou sčítat.</li>
+            </ul>
+            <p>Pokud si výsledkem nejste jistí, nechte ho posoudit právníkem. Chybné zařazení se nevyplácí ani jedním směrem.</p>
 
-        <h2>Týká se vás to, i když povinnou osobou nejste</h2>
-        <p>I firma mimo regulaci často pocítí NIS2 nepřímo. Povinné osoby musí řídit rizika svých dodavatelů, a tak od nich začínají vyžadovat doklady o zabezpečení: smluvní závazky, dotazníky, potvrzení o školení zaměstnanců. Kdo je nedoloží, může o zakázku přijít.</p>
+            <h2 id="tyka-se-vas-to-i-kdyz-povinnou-osobou-nejste">Týká se vás to, i když povinnou osobou nejste</h2>
+            <p>I firma mimo regulaci často pocítí NIS2 nepřímo. Povinné osoby musí řídit rizika svých dodavatelů, a tak od nich začínají vyžadovat doklady o zabezpečení: smluvní závazky, dotazníky, potvrzení o školení zaměstnanců. Kdo je nedoloží, může o zakázku přijít.</p>
 
-        <h2>Co udělat hned teď</h2>
-        <ol>
-          <li>Projděte samoposouzení a výsledek si uložte.</li>
-          <li>Určete člověka, který bude za kybernetickou bezpečnost ve firmě odpovídat.</li>
-          <li>Zmapujte, jaké systémy a data firma používá a co by se stalo, kdyby nefungovaly.</li>
-          <li>Naplánujte školení zaměstnanců i vedení. Je to jedna z povinností, kterou lze vyřešit rychle a doložit.</li>
-        </ol>
+            <h2 id="co-udelat-hned-ted">Co udělat hned teď</h2>
+            <ol>
+              <li>Projděte samoposouzení a výsledek si uložte.</li>
+              <li>Určete člověka, který bude za kybernetickou bezpečnost ve firmě odpovídat.</li>
+              <li>Zmapujte, jaké systémy a data firma používá a co by se stalo, kdyby nefungovaly.</li>
+              <li>Naplánujte školení zaměstnanců i vedení. Je to jedna z povinností, kterou lze vyřešit rychle a doložit.</li>
+            </ol>
           </div>
 
           <div class="sources">
@@ -149,13 +165,43 @@
             <h2>Potřebujete NIS2 školení? Máme hotový český kurz.</h2>
             <p>Online kurz kybernetické bezpečnosti pro zaměstnance i vedení. Projdou ho za hodinu a vy máte ke každému jménu záznam o dokončení a výsledek testu.</p>
             <div class="actions">
-          <a class="btn btn-primary" href="../../kurz-kyberbezpecnost.html">Prohlédnout kurz</a>
-          <a class="link" href="../../kurz-kyberbezpecnost.html#ukazka">Vyzkoušet ukázku</a>
+              <a class="btn btn-primary" href="../../kurz-kyberbezpecnost.html">Prohlédnout kurz</a>
+              <a class="link" href="../../kurz-kyberbezpecnost.html#ukazka">Vyzkoušet ukázku</a>
             </div>
           </aside>
         </div>
-      </section>
+      </div>
     </article>
+
+    <section class="ar-related" aria-labelledby="dalsi-clanky">
+      <div class="wrap">
+        <h2 class="bx-label" id="dalsi-clanky">Další články</h2>
+        <div class="ar-rel-grid">
+          <article class="bx-story ar-rel-item">
+            <div class="bx-media">
+              <img src="../../assets/blog/scenes/skoleni-zamestnancu-podle-nis2.svg" alt="Rozhraní online kurzu s postupem modulů a přehledem dokončení u zaměstnanců" width="1200" height="900" loading="lazy" decoding="async" style="object-position:60% 60%" />
+            </div>
+            <div class="bx-text">
+              <p class="bx-meta"><span class="bx-cat">Školení</span><time datetime="2026-10-16">16. října 2026</time><span>3 min čtení</span></p>
+              <h3 class="bx-h"><a href="../skoleni-zamestnancu-podle-nis2/index.html">Jak splnit povinnost školení zaměstnanců podle NIS2</a></h3>
+              <p class="bx-excerpt">Školení zaměstnanců patří mezi povinnosti, které NIS2 ukládá výslovně. Zároveň je to jedna z mála povinností, kterou firma dokáže splnit během několika týdnů. Tady je postup krok za krokem, od výběru lidí po doklad pro kontrolu.</p>
+              <span class="bx-more" aria-hidden="true">Číst článek</span>
+            </div>
+          </article>
+          <article class="bx-story ar-rel-item">
+            <div class="bx-media">
+              <img src="../../assets/blog/scenes/nis2-sankce-co-hrozi-firmam.svg" alt="Úřední dopis se zvýrazněným paragrafem a kalendář s vyznačeným termínem" width="1200" height="900" loading="lazy" decoding="async" style="object-position:45% 50%" />
+            </div>
+            <div class="bx-text">
+              <p class="bx-meta"><span class="bx-cat">Rizika</span><time datetime="2026-10-16">16. října 2026</time><span>3 min čtení</span></p>
+              <h3 class="bx-h"><a href="../nis2-sankce-co-hrozi-firmam/index.html">Co hrozí firmám, které NIS2 nesplní</a></h3>
+              <p class="bx-excerpt">Pokuty jsou nejviditelnější, ale ne jediné riziko nesplnění NIS2. Firma může přijít o zakázky, nést náklady incidentu, kterému šlo předejít, a odpovědnost může dopadnout i na vedení. Přehled toho, s čím počítat.</p>
+              <span class="bx-more" aria-hidden="true">Číst článek</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>

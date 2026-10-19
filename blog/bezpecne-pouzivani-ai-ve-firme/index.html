@@ -73,63 +73,79 @@
     </div>
   </header>
 
-  <main id="top">
-    <article class="page-blog">
-      <section>
-        <div class="narrow">
-          <header class="article-head">
-            <a class="back-link" href="../index.html">Blog</a>
-            <p class="eyebrow" style="margin-top:28px;"><time datetime="2026-10-16">16. října 2026</time></p>
-            <h1 class="headline" style="margin-top:12px;">Jak zaměstnance naučit používat AI bezpečně</h1>
-            <p class="lead" style="margin-top:22px;">Vaši zaměstnanci AI nástroje nejspíš už používají, ať o tom víte, nebo ne. Zákaz obvykle nefunguje, jen přesune používání do soukromých účtů. Lepší je nastavit jasná pravidla a naučit lidi, kde jsou hranice.</p>
-          </header>
+  <main id="top" class="article-page">
+    <article>
+      <header class="ar-head">
+        <div class="wrap">
+          <a class="back-link" href="../index.html">Všechny články</a>
+          <p class="bx-meta ar-meta"><span class="bx-cat">AI ve firmě</span><time datetime="2026-10-16">16. října 2026</time><span>2 min čtení</span></p>
+          <h1 class="ar-title">Jak zaměstnance naučit používat AI bezpečně</h1>
+          <p class="ar-perex">Vaši zaměstnanci AI nástroje nejspíš už používají, ať o tom víte, nebo ne. Zákaz obvykle nefunguje, jen přesune používání do soukromých účtů. Lepší je nastavit jasná pravidla a naučit lidi, kde jsou hranice.</p>
+        </div>
+      </header>
 
-          <img class="article-cover" src="../../assets/blog/scenes/bezpecne-pouzivani-ai-ve-firme.svg" alt="Okno AI asistenta se skrytými osobními údaji ve zprávě a štítem se zámkem" width="1200" height="900" decoding="async" fetchpriority="high" style="object-position:55% 45%" />
+      <div class="wrap">
+        <img class="article-cover" src="../../assets/blog/scenes/bezpecne-pouzivani-ai-ve-firme.svg" alt="Okno AI asistenta se skrytými osobními údaji ve zprávě a štítem se zámkem" width="1200" height="900" decoding="async" fetchpriority="high" style="object-position:55% 45%" />
+      </div>
 
+      <div class="wrap ar-layout">
+        <nav class="ar-toc" aria-label="Obsah článku">
+          <p class="ar-toc-title">V článku</p>
+          <ol>
+              <li><a href="#proc-to-resit-ted">Proč to řešit teď</a></li>
+              <li><a href="#hlavni-rizika">Hlavní rizika</a></li>
+              <li><a href="#co-do-ai-nikdy-nevkladat">Co do AI nikdy nevkládat</a></li>
+              <li><a href="#jak-s-vystupem-zachazet">Jak s výstupem zacházet</a></li>
+              <li><a href="#pravidla-ktera-by-mela-mit-kazda-firma">Pravidla, která by měla mít každá firma</a></li>
+              <li><a href="#jak-zamestnance-naucit">Jak zaměstnance naučit</a></li>
+          </ol>
+        </nav>
+
+        <div class="ar-main">
           <div class="prose">
-        <h2>Proč to řešit teď</h2>
-        <p>Generativní AI zrychlí psaní e-mailů, shrnutí dokumentů i přípravu podkladů. Zároveň s sebou nese rizika, která běžný uživatel nevidí: kam putují vložená data, kdo k nim má přístup a jak spolehlivý je výstup.</p>
-        <p>K tomu přibývají regulatorní požadavky. Evropský akt o umělé inteligenci (AI Act, nařízení (EU) 2024/1689) v čl. 4 ukládá firmám, které AI systémy používají, přijímat opatření k rozvoji gramotnosti svých zaměstnanců v oblasti AI. Povinnost platí od 2. února 2025. V roce 2026 AI Act novelizovalo nařízení (EU) 2026/1744 (tzv. digitální omnibus), aktuální znění proto ověřte na <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=cs" target="_blank" rel="noopener">EUR-Lex</a>.</p>
+            <h2 id="proc-to-resit-ted">Proč to řešit teď</h2>
+            <p>Generativní AI zrychlí psaní e-mailů, shrnutí dokumentů i přípravu podkladů. Zároveň s sebou nese rizika, která běžný uživatel nevidí: kam putují vložená data, kdo k nim má přístup a jak spolehlivý je výstup.</p>
+            <p>K tomu přibývají regulatorní požadavky. Evropský akt o umělé inteligenci (AI Act, nařízení (EU) 2024/1689) v čl. 4 ukládá firmám, které AI systémy používají, přijímat opatření k rozvoji gramotnosti svých zaměstnanců v oblasti AI. Povinnost platí od 2. února 2025. V roce 2026 AI Act novelizovalo nařízení (EU) 2026/1744 (tzv. digitální omnibus), aktuální znění proto ověřte na <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=cs" target="_blank" rel="noopener">EUR-Lex</a>.</p>
 
-        <h2>Hlavní rizika</h2>
-        <ul>
-          <li><strong>Únik dat.</strong> Text vložený do veřejného AI nástroje může být uložen a podle podmínek služby použit k dalšímu tréninku. Firma nad ním ztrácí kontrolu.</li>
-          <li><strong>Osobní údaje a GDPR.</strong> Vložení osobních údajů zákazníků nebo zaměstnanců do AI je zpracování osobních údajů. Musí k němu existovat právní důvod a odpovídající smlouva s poskytovatelem.</li>
-          <li><strong>Vymyšlené informace.</strong> AI umí přesvědčivě napsat nepravdu, včetně neexistujících čísel, zdrojů a citací zákonů.</li>
-          <li><strong>Autorská práva a obchodní tajemství.</strong> Nejasnosti kolem práv k výstupu a riziko, že do AI odejde know-how firmy.</li>
-          <li><strong>Stínová AI.</strong> Lidé používají soukromé účty a nástroje, o kterých firma neví a které nemá pod kontrolou.</li>
-        </ul>
+            <h2 id="hlavni-rizika">Hlavní rizika</h2>
+            <ul>
+              <li><strong>Únik dat.</strong> Text vložený do veřejného AI nástroje může být uložen a podle podmínek služby použit k dalšímu tréninku. Firma nad ním ztrácí kontrolu.</li>
+              <li><strong>Osobní údaje a GDPR.</strong> Vložení osobních údajů zákazníků nebo zaměstnanců do AI je zpracování osobních údajů. Musí k němu existovat právní důvod a odpovídající smlouva s poskytovatelem.</li>
+              <li><strong>Vymyšlené informace.</strong> AI umí přesvědčivě napsat nepravdu, včetně neexistujících čísel, zdrojů a citací zákonů.</li>
+              <li><strong>Autorská práva a obchodní tajemství.</strong> Nejasnosti kolem práv k výstupu a riziko, že do AI odejde know-how firmy.</li>
+              <li><strong>Stínová AI.</strong> Lidé používají soukromé účty a nástroje, o kterých firma neví a které nemá pod kontrolou.</li>
+            </ul>
 
-        <h2>Co do AI nikdy nevkládat</h2>
-        <p>Pokud firma nemá schválený nástroj se smluvně ošetřeným zpracováním dat, platí jednoduché pravidlo: nevkládejte nic, co byste neposlali e-mailem cizímu člověku. Konkrétně:</p>
-        <ul>
-          <li>osobní údaje zákazníků, pacientů nebo zaměstnanců (jména, rodná čísla, kontakty, zdravotní údaje),</li>
-          <li>hesla, přístupové klíče a přihlašovací údaje,</li>
-          <li>smlouvy, cenové nabídky a finanční výsledky, které nejsou veřejné,</li>
-          <li>zdrojový kód a technickou dokumentaci interních systémů,</li>
-          <li>interní strategie, personální záležitosti a jakékoli dokumenty označené jako důvěrné.</li>
-        </ul>
-        <p>Když AI potřebujete na práci s takovým textem, anonymizujte ho: nahraďte jména a čísla obecnými zástupnými údaji.</p>
+            <h2 id="co-do-ai-nikdy-nevkladat">Co do AI nikdy nevkládat</h2>
+            <p>Pokud firma nemá schválený nástroj se smluvně ošetřeným zpracováním dat, platí jednoduché pravidlo: nevkládejte nic, co byste neposlali e-mailem cizímu člověku. Konkrétně:</p>
+            <ul>
+              <li>osobní údaje zákazníků, pacientů nebo zaměstnanců (jména, rodná čísla, kontakty, zdravotní údaje),</li>
+              <li>hesla, přístupové klíče a přihlašovací údaje,</li>
+              <li>smlouvy, cenové nabídky a finanční výsledky, které nejsou veřejné,</li>
+              <li>zdrojový kód a technickou dokumentaci interních systémů,</li>
+              <li>interní strategie, personální záležitosti a jakékoli dokumenty označené jako důvěrné.</li>
+            </ul>
+            <p>Když AI potřebujete na práci s takovým textem, anonymizujte ho: nahraďte jména a čísla obecnými zástupnými údaji.</p>
 
-        <h2>Jak s výstupem zacházet</h2>
-        <ul>
-          <li>Výstup AI je návrh, ne hotová práce. Za výsledek odpovídá člověk, který ho použije.</li>
-          <li>Fakta, čísla a odkazy na zákony vždy ověřte v původním zdroji.</li>
-          <li>Texty pro zákazníky si před odesláním přečtěte celé.</li>
-          <li>U rozhodnutí o lidech (nábor, hodnocení) AI používejte jen jako pomocníka, nikdy jako rozhodovatele.</li>
-        </ul>
+            <h2 id="jak-s-vystupem-zachazet">Jak s výstupem zacházet</h2>
+            <ul>
+              <li>Výstup AI je návrh, ne hotová práce. Za výsledek odpovídá člověk, který ho použije.</li>
+              <li>Fakta, čísla a odkazy na zákony vždy ověřte v původním zdroji.</li>
+              <li>Texty pro zákazníky si před odesláním přečtěte celé.</li>
+              <li>U rozhodnutí o lidech (nábor, hodnocení) AI používejte jen jako pomocníka, nikdy jako rozhodovatele.</li>
+            </ul>
 
-        <h2>Pravidla, která by měla mít každá firma</h2>
-        <ol>
-          <li><strong>Seznam povolených nástrojů.</strong> Které AI služby se smí používat a s jakým typem účtu (firemní, ne soukromý).</li>
-          <li><strong>Klasifikace dat.</strong> Co se do AI vkládat smí, co jen anonymizované a co nikdy.</li>
-          <li><strong>Odpovědnost.</strong> Kdo pravidla spravuje a na koho se lidé obrátí s dotazem.</li>
-          <li><strong>Postup při chybě.</strong> Co dělat, když někdo omylem vloží citlivá data.</li>
-        </ol>
-        <p>Pravidla stačí na jednu až dvě strany. Delší dokument nikdo nečte.</p>
+            <h2 id="pravidla-ktera-by-mela-mit-kazda-firma">Pravidla, která by měla mít každá firma</h2>
+            <ol>
+              <li><strong>Seznam povolených nástrojů.</strong> Které AI služby se smí používat a s jakým typem účtu (firemní, ne soukromý).</li>
+              <li><strong>Klasifikace dat.</strong> Co se do AI vkládat smí, co jen anonymizované a co nikdy.</li>
+              <li><strong>Odpovědnost.</strong> Kdo pravidla spravuje a na koho se lidé obrátí s dotazem.</li>
+              <li><strong>Postup při chybě.</strong> Co dělat, když někdo omylem vloží citlivá data.</li>
+            </ol>
+            <p>Pravidla stačí na jednu až dvě strany. Delší dokument nikdo nečte.</p>
 
-        <h2>Jak zaměstnance naučit</h2>
-        <p>Samotná směrnice v intranetu nestačí. Lidé potřebují vidět na konkrétních příkladech, jak AI používat dobře a kde jsou hranice. Funguje praktické školení, na kterém si zaměstnanci vyzkouší skutečné úlohy ze své práce a rovnou se naučí, co do nástroje nepatří. Kdo s AI teprve začíná, ocení stručnou příručku, ke které se může vracet.</p>
+            <h2 id="jak-zamestnance-naucit">Jak zaměstnance naučit</h2>
+            <p>Samotná směrnice v intranetu nestačí. Lidé potřebují vidět na konkrétních příkladech, jak AI používat dobře a kde jsou hranice. Funguje praktické školení, na kterém si zaměstnanci vyzkouší skutečné úlohy ze své práce a rovnou se naučí, co do nástroje nepatří. Kdo s AI teprve začíná, ocení stručnou příručku, ke které se může vracet.</p>
           </div>
 
           <div class="sources">
@@ -145,13 +161,43 @@
             <h2>Chcete AI zavést bezpečně? Naučíme to vaše lidi.</h2>
             <p>Prezenční školení „Nebojte se AI“ pro firemní týmy: prakticky, na úlohách z vaší práce, včetně toho, co do AI nevkládat. Pro samostudium je tu e-book AI prakticky.</p>
             <div class="actions">
-          <a class="btn btn-primary" href="../../skoleni-ai.html">Školení Nebojte se AI</a>
-          <a class="link" href="../../ebook.html">E-book AI prakticky</a>
+              <a class="btn btn-primary" href="../../skoleni-ai.html">Školení Nebojte se AI</a>
+              <a class="link" href="../../ebook.html">E-book AI prakticky</a>
             </div>
           </aside>
         </div>
-      </section>
+      </div>
     </article>
+
+    <section class="ar-related" aria-labelledby="dalsi-clanky">
+      <div class="wrap">
+        <h2 class="bx-label" id="dalsi-clanky">Další články</h2>
+        <div class="ar-rel-grid">
+          <article class="bx-story ar-rel-item">
+            <div class="bx-media">
+              <img src="../../assets/blog/scenes/nis2-koho-se-tyka-a-od-kdy-plati.svg" alt="Prosklená fasáda moderní kancelářské budovy v perspektivě" width="1200" height="900" loading="lazy" decoding="async" style="object-position:35% 50%" />
+            </div>
+            <div class="bx-text">
+              <p class="bx-meta"><span class="bx-cat">NIS2</span><time datetime="2026-10-16">16. října 2026</time><span>4 min čtení</span></p>
+              <h3 class="bx-h"><a href="../nis2-koho-se-tyka-a-od-kdy-plati/index.html">NIS2: koho se týká a od kdy platí</a></h3>
+              <p class="bx-excerpt">Evropská směrnice NIS2 výrazně rozšířila okruh firem, které musí řešit kybernetickou bezpečnost jako zákonnou povinnost. Mnoho z nich o tom přitom zatím neví. V článku najdete, podle čeho zjistíte, jestli se povinnosti týkají i vás, a co dělat jako první.</p>
+              <span class="bx-more" aria-hidden="true">Číst článek</span>
+            </div>
+          </article>
+          <article class="bx-story ar-rel-item">
+            <div class="bx-media">
+              <img src="../../assets/blog/scenes/skoleni-zamestnancu-podle-nis2.svg" alt="Rozhraní online kurzu s postupem modulů a přehledem dokončení u zaměstnanců" width="1200" height="900" loading="lazy" decoding="async" style="object-position:60% 60%" />
+            </div>
+            <div class="bx-text">
+              <p class="bx-meta"><span class="bx-cat">Školení</span><time datetime="2026-10-16">16. října 2026</time><span>3 min čtení</span></p>
+              <h3 class="bx-h"><a href="../skoleni-zamestnancu-podle-nis2/index.html">Jak splnit povinnost školení zaměstnanců podle NIS2</a></h3>
+              <p class="bx-excerpt">Školení zaměstnanců patří mezi povinnosti, které NIS2 ukládá výslovně. Zároveň je to jedna z mála povinností, kterou firma dokáže splnit během několika týdnů. Tady je postup krok za krokem, od výběru lidí po doklad pro kontrolu.</p>
+              <span class="bx-more" aria-hidden="true">Číst článek</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>

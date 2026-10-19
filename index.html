@@ -82,25 +82,10 @@
         </div>
 
         <div class="hero-visual reveal" data-d="3" id="heroVisual">
-          <div class="slideshow">
-            <div class="slide active">
-              <img src="assets/kurz-kyberbezpecnost-cover.svg" alt="Obálka kurzu Kybernetická bezpečnost pro zaměstnance" width="1240" height="1754" loading="lazy" decoding="async" />
-              <p>Kyberbezpečnost podle NIS2</p>
-            </div>
-            <div class="slide">
-              <img src="assets/kurz-ai-cover.svg" alt="Obálka kurzu AI ve firmě" width="1240" height="1754" loading="lazy" decoding="async" />
-              <p>Bezpečné používání AI</p>
-            </div>
-            <div class="slide">
-              <img src="assets/ebook-cover.svg" alt="Obálka e-booku AI prakticky" width="1240" height="1754" loading="lazy" decoding="async" />
-              <p>AI prakticky — e-book</p>
-            </div>
-
-            <div class="dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
+          <div class="hero-covers">
+            <img class="hc hc-side hc-left" src="assets/kurz-ai-cover.svg" alt="" width="1240" height="1754" decoding="async" />
+            <img class="hc hc-main" src="assets/kurz-kyberbezpecnost-cover.svg" alt="Obálka kurzu Kybernetická bezpečnost pro zaměstnance" width="1240" height="1754" decoding="async" fetchpriority="high" />
+            <img class="hc hc-side hc-right" src="assets/ebook-cover.svg" alt="" width="1240" height="1754" decoding="async" />
           </div>
         </div>
       </div>
@@ -151,7 +136,7 @@
     </section>
 
     <!-- ══ DEMO KURZU ══ -->
-    <section id="demo">
+    <section id="demo" class="section-alt">
       <div class="wrap center">
         <p class="eyebrow reveal">Ukázka z kurzu</p>
         <h2 class="headline reveal" data-d="1" style="margin-top:14px;">Vyzkoušejte ukázku kurzu</h2>
@@ -182,9 +167,41 @@
       </div>
     </section>
 
+    <!-- ══ PRODUKT 4 — PREZENČNÍ ŠKOLENÍ ══ -->
+    <section>
+      <div class="wrap product-grid flip">
+        <div class="product-copy">
+          <p class="eyebrow reveal">Prezenční školení u vás ve firmě</p>
+          <h2 class="headline reveal" data-d="1">Nebojte se AI</h2>
+          <p class="subtitle reveal" data-d="1">Praktické školení, ne e-learning</p>
+          <p class="lead reveal" data-d="1">
+            Za půlden se vaši lidé naučí používat AI na e-maily, shrnutí dokumentů
+            a rutinní úkoly. Školíme osobně, na jejich vlastních úkolech a zařízeních.
+          </p>
+          <p class="price reveal" data-d="2"><span class="muted">Cena na míru podle počtu účastníků</span></p>
+          <div class="actions reveal" data-d="2">
+            <a class="btn btn-primary" href="skoleni-ai.html">Zobrazit školení</a>
+            <a class="link" href="skoleni-ai.html#poptavka">Nezávazná poptávka</a>
+          </div>
+        </div>
+
+        <div class="product-visual reveal" data-d="2">
+          <div class="panel-card">
+            <h3>Formát školení</h3>
+            <ul class="checks" style="margin-top:4px;">
+              <li>Půlden 3–4 hodiny nebo celý den 6–7 hodin</li>
+              <li>Prezenčně u vás ve firmě</li>
+              <li>Obsah podle typu práce vašich lidí</li>
+              <li>Tahák s prompty pro každého účastníka</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ══ PRODUKT 2 — E-BOOK ══ -->
     <section class="section-alt">
-      <div class="wrap product-grid flip">
+      <div class="wrap product-grid">
         <div class="product-copy">
           <h2 class="headline reveal" data-d="1">AI prakticky</h2>
           <p class="subtitle reveal" data-d="1">Pro ty, kdo s AI ještě nezačali</p>
@@ -200,14 +217,14 @@
         </div>
 
         <div class="product-visual reveal" data-d="2">
-          <div class="book3d right"><div class="book3d-inner"><img src="assets/ebook-cover.svg" alt="Obálka e-booku AI prakticky" width="1240" height="1754" loading="lazy" decoding="async" /></div></div>
+          <div class="book3d"><div class="book3d-inner"><img src="assets/ebook-cover.svg" alt="Obálka e-booku AI prakticky" width="1240" height="1754" loading="lazy" decoding="async" /></div></div>
         </div>
       </div>
     </section>
 
     <!-- ══ PRODUKT 3 — AI VE FIRMĚ (připravujeme) ══ -->
     <section>
-      <div class="wrap product-grid">
+      <div class="wrap product-grid flip">
         <div class="product-copy">
           <p class="reveal"><span class="badge-soon">Připravujeme</span></p>
           <p class="eyebrow reveal">Bezpečné používání AI + EU AI Act</p>
@@ -224,39 +241,7 @@
         </div>
 
         <div class="product-visual reveal" data-d="2">
-          <div class="book3d"><div class="book3d-inner"><img src="assets/kurz-ai-cover.svg" alt="Obálka kurzu AI ve firmě" width="1240" height="1754" loading="lazy" decoding="async" /></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══ PRODUKT 4 — PREZENČNÍ ŠKOLENÍ ══ -->
-    <section>
-      <div class="wrap product-grid">
-        <div class="product-copy">
-          <p class="eyebrow reveal">Prezenční školení u vás ve firmě</p>
-          <h2 class="headline reveal" data-d="1">Nebojte se AI</h2>
-          <p class="subtitle reveal" data-d="1">Praktické školení, ne e-learning</p>
-          <p class="lead reveal" data-d="1">
-            Za půlden se vaši lidé naučí používat AI na e-maily, shrnutí dokumentů
-            a rutinní úkoly. Školíme osobně, na jejich vlastních úkolech a zařízeních.
-          </p>
-          <p class="price reveal" data-d="2"><span class="muted">Cena na míru podle počtu účastníků</span></p>
-          <div class="actions reveal" data-d="2">
-            <a class="btn btn-primary" href="skoleni-ai.html">Zobrazit školení</a>
-            <a class="link" href="kurz-kyberbezpecnost.html#poptavka">Nezávazná poptávka</a>
-          </div>
-        </div>
-
-        <div class="product-visual reveal" data-d="2">
-          <div class="panel-card">
-            <h3>Formát školení</h3>
-            <ul class="checks" style="margin-top:4px;">
-              <li>Půlden 3–4 hodiny nebo celý den 6–7 hodin</li>
-              <li>Prezenčně u vás ve firmě</li>
-              <li>Obsah podle typu práce vašich lidí</li>
-              <li>Tahák s prompty pro každého účastníka</li>
-            </ul>
-          </div>
+          <div class="book3d right"><div class="book3d-inner"><img src="assets/kurz-ai-cover.svg" alt="Obálka kurzu AI ve firmě" width="1240" height="1754" loading="lazy" decoding="async" /></div></div>
         </div>
       </div>
     </section>
@@ -336,53 +321,14 @@
           </div>
         </div>
 
-        <!-- Naše kurzy -->
-        <h3 class="sub reveal" style="margin-top:clamp(60px,8vw,90px);">Naše kurzy</h3>
-        <div class="trio reveal" data-d="1">
-          <div class="panel-card">
-            <h4>Kybernetická bezpečnost pro zaměstnance</h4>
-            <p class="muted" style="margin-top:10px;">
-              Doložitelné školení podle zákona č. 264/2025 Sb. (NIS2).
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="kurz-kyberbezpecnost.html">Zobrazit kurz</a>
-            </p>
-          </div>
-          <div class="panel-card">
-            <h4>Umělá inteligence ve firmě</h4>
-            <p class="muted" style="margin-top:10px;">
-              Bezpečné a odpovědné používání AI, GDPR a EU AI Act.
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="kurz-ai.html">Zobrazit kurz</a>
-            </p>
-          </div>
-          <div class="panel-card">
-            <h4>AI prakticky</h4>
-            <p class="muted" style="margin-top:10px;">
-              E-book pro úplné začátečníky. Devět kapitol a hotová zadání k vyzkoušení.
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="ebook.html">Zobrazit e-book</a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Provozovatel -->
-        <h3 class="sub reveal" style="margin-top:clamp(60px,8vw,90px);">Provozovatel</h3>
-        <div class="panel-card reveal" data-d="1" style="max-width:420px;margin:28px auto 0;text-align:left;">
-          <p><strong>Andrea Procházková</strong></p>
-          <p class="muted" style="margin-top:8px;">IČO: 05595266</p>
-          <p class="muted">Kurzova 2222/16, 155 00 Praha – Stodůlky</p>
-          <p style="margin-top:14px;">
-            <a class="link" data-email href="mailto:myedooofficial@gmail.com">myedooofficial@gmail.com</a>
-          </p>
+        <div class="actions reveal" data-d="2" style="justify-content:center;margin-top:clamp(40px,6vw,56px);">
+          <a class="link" href="o-nas.html">Více o nás</a>
         </div>
       </div>
     </section>
 
     <!-- ══ KONTAKT ══ -->
-    <section id="kontakt" class="section-alt">
+    <section id="kontakt" class="section-ink">
       <div class="wrap center">
         <h2 class="headline reveal">Splňte povinnost školení<br />tento měsíc.</h2>
         <p class="lead reveal" data-d="1" style="max-width:46ch;margin:22px auto 0;">
@@ -506,27 +452,6 @@
       window.addEventListener('scroll', function () {
         if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
       }, { passive: true });
-    })();
-
-    // ---- Hero slideshow ----
-    (function () {
-      var box = document.querySelector('.slideshow');
-      if (!box) return;
-      var slides = box.querySelectorAll('.slide');
-      var dots = box.querySelectorAll('.dot');
-      var current = 0;
-
-      function show(index) {
-        slides.forEach(function (s, i) { s.classList.toggle('active', i === index); });
-        dots.forEach(function (d, i) { d.classList.toggle('active', i === index); });
-        current = index;
-      }
-
-      dots.forEach(function (dot, i) { dot.addEventListener('click', function () { show(i); }); });
-
-      setInterval(function () {
-        show((current + 1) % slides.length);
-      }, 4000);
     })();
   </script>
 </body>
