@@ -337,7 +337,9 @@
       }
       html.nav-open body::after { opacity: 1; }
       .nav.open { background: rgba(255,255,255,.98); }
-      html.nav-open { overflow: hidden; }
+      /* zámek rolování na body, ne na html: přes html by se z body (overflow-x: hidden)
+         stal samostatný rolovací kontejner a lepicí hlavička by při otevření menu odjela */
+      html.nav-open body { overflow: hidden; }
 
       .nav-links {
         position: absolute; left: 0; right: 0; top: 100%;
@@ -870,3 +872,62 @@ details.acc .acc-body { padding:0 0 22px; color:var(--ink-2); max-width:68ch; fo
   .sm-cta { flex-direction: column; align-items: stretch; }
   .sm-cta .btn { width: 100%; }
 }
+
+/* ============ ÚVOD PODSTRÁNKY (Kurzy, O nás, Kontakt) — stejný vzor jako úvod blogu ============ */
+.pi { padding: clamp(48px, 8vh, 96px) 0 0; }
+.pi-in { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px 56px; align-items: end;
+  padding-bottom: clamp(28px, 4vh, 40px); border-bottom: 1px solid var(--line); }
+.pi-title { margin-top: 14px; max-width: 14ch; font-size: clamp(2.3rem, 5.2vw, 4rem); letter-spacing: -.045em; line-height: 1.02; }
+.pi-sub { justify-self: end; max-width: 38ch; font-size: clamp(1.02rem, 1.5vw, 1.2rem); line-height: 1.5; color: var(--ink-2); }
+.pi + section { padding-top: clamp(40px, 6vw, 72px); }
+@media (max-width: 960px) { .pi-in { grid-template-columns: 1fr; } .pi-sub { justify-self: start; } }
+@media (max-width: 640px) { .pi { padding-top: 40px; } .pi-title { font-size: 2.3rem; } }
+
+/* zakázková služba se od hotových produktů odlišuje tmavým panelem nabídky */
+.offer-custom .panel-card { background: var(--ink); border-color: var(--ink); color: #fff; }
+.offer-custom .panel-card .checks li { color: rgba(255,255,255,.78); }
+.offer-custom .panel-card .checks li::before { color: #8fa0ff; }
+.offer-custom .panel-card .offer-note { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.16);
+  font-size: .9rem; color: rgba(255,255,255,.6); }
+
+/* ============ ŘÁDKOVÝ VÝPIS NABÍDEK (offer-row), PŘÍMÝ KONTAKT (kt-), ÚDAJE PROVOZOVATELE (op-list) ============ */
+.offer-rows { list-style: none; border-bottom: 1px solid var(--line); }
+.offer-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 48px; align-items: center;
+  padding: clamp(22px, 3vw, 30px) 0; border-top: 1px solid var(--line); }
+.offer-rows .offer-row:first-child { border-top: 0; padding-top: 0; }
+.offer-row h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -.02em; line-height: 1.25; }
+.offer-row p { margin-top: 6px; max-width: 62ch; color: var(--ink-2); font-size: .97rem; line-height: 1.55; }
+.offer-row-links { display: flex; align-items: center; justify-content: flex-end; gap: 12px 24px; flex-wrap: wrap; }
+.offer-row-links .btn { padding: 12px 22px; font-size: .95rem; }
+.kt-direct { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px clamp(40px, 6vw, 88px); align-items: end; }
+.kt-direct-links { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 22px; }
+.kt-direct-links .link { font-size: clamp(1.1rem, 1.6vw, 1.25rem); min-height: 40px; }
+.op-list > div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.op-list > div:last-child { border-bottom: 1px solid var(--line); }
+.op-list dt { font-size: .86rem; color: var(--ink-2); }
+.op-list dd { font-weight: 600; }
+@media (max-width: 860px) {
+  .offer-row { grid-template-columns: 1fr; }
+  .offer-row-links { justify-content: flex-start; }
+  .kt-direct { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .offer-row-links { flex-direction: column; align-items: stretch; }
+  .offer-row-links .btn { width: 100%; }
+  .offer-row-links .link { justify-content: center; min-height: 44px; }
+  .op-list > div { grid-template-columns: 1fr; gap: 2px; }
+}
+.offer-custom.no-rule { padding-top: clamp(80px, 11vw, 136px); }
+.offer-custom.no-rule .product-grid { border-top: 0; padding-top: 0; }
+@media (max-width: 560px) { .offer-custom.no-rule { padding-top: 64px; } }
+
+/* ============ O NÁS (on-) ============ */
+.on-team { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px clamp(32px, 5vw, 72px); }
+.on-person { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 24px; align-items: start; }
+.on-person img { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; background: var(--bg-alt); }
+.on-person h3 { font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
+.on-role { margin-top: 4px; font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.on-person p:not(.on-role) { margin-top: 12px; color: var(--ink-2); line-height: 1.55; }
+.offer-row h3 .badge-soon { margin-left: 8px; vertical-align: 3px; }
+@media (max-width: 860px) { .on-team { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .on-person { grid-template-columns: 80px minmax(0, 1fr); gap: 18px; } .on-person img { width: 80px; height: 80px; } }

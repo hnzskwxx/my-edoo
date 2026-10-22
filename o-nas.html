@@ -43,88 +43,105 @@
   </header>
 
   <main id="top">
-    <section class="hero center" style="padding-bottom:0;">
-      <div class="wrap">
-        <h1 class="display reveal">O nás</h1>
-
-        <p class="lead reveal" data-d="1" style="max-width:52ch;margin:26px auto 0;">
+    <header class="pi">
+      <div class="wrap pi-in">
+        <div class="reveal">
+          <p class="eyebrow">O nás</p>
+          <h1 class="pi-title">O nás</h1>
+        </div>
+        <p class="pi-sub reveal" data-d="1">
           My-Edoo vytváří online školení pro české firmy. Kurzy jsou krátké, praktické
           a napsané srozumitelně, bez právnického jazyka, aby si z nich zaměstnanci
           opravdu něco odnesli.
         </p>
-        <p class="lead reveal" data-d="1" style="max-width:52ch;margin:18px auto 0;">
+      </div>
+    </header>
+
+    <!-- ══ LIDÉ ══ -->
+    <section aria-labelledby="tym-title">
+      <div class="wrap">
+        <h2 class="bx-label" id="tym-title">Kdo za My-Edoo stojí</h2>
+        <div class="on-team">
+          <article class="on-person reveal" data-d="1">
+            <img src="assets/andrea.jpg" alt="Mgr. Andrea Procházková" width="184" height="184" loading="lazy" decoding="async" />
+            <div>
+              <h3>Mgr. Andrea Procházková</h3>
+              <p class="on-role">E-learning &amp; LMS</p>
+              <p>Tvořila e-learningy a spravovala LMS pro Siemens, Organon, Envista a Benu.</p>
+            </div>
+          </article>
+          <article class="on-person reveal" data-d="2">
+            <img src="assets/nicolas.jpg" alt="Nicolas Jan Sefzig" width="184" height="184" loading="lazy" decoding="async" />
+            <div>
+              <h3>Nicolas Jan Sefzig</h3>
+              <p class="on-role">IT &amp; kyberbezpečnost</p>
+              <p>Stará se o provoz platformy, zabezpečení dat a technickou stránku kurzů.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ JAK DODÁVÁME ══ -->
+    <section class="section-alt">
+      <div class="wrap sk-split">
+        <div class="sk-split-head">
+          <p class="eyebrow reveal">Jak pracujeme</p>
+          <h2 class="sk-h2 reveal" data-d="1">Doložitelné školení, ne jen obsah</h2>
+        </div>
+        <p class="sk-statement reveal" data-d="1">
           Každý kurz dodáváme jako SCORM balíček pro váš LMS. Firma tak získá doložitelný
           záznam o dokončení a výsledku testu každého zaměstnance.
         </p>
       </div>
     </section>
 
-    <section class="section-alt">
-      <div class="wrap center">
-        <h2 class="headline reveal">Kdo za My-Edoo stojí</h2>
+    <!-- ══ NAŠE KURZY ══ -->
+    <section aria-labelledby="kurzy-title">
+      <div class="wrap">
+        <h2 class="bx-label" id="kurzy-title">Naše kurzy</h2>
+        <ul class="offer-rows">
+          <li class="offer-row">
+            <div class="offer-row-copy">
+              <h3>Kybernetická bezpečnost pro zaměstnance</h3>
+              <p>Doložitelné školení podle zákona č. 264/2025 Sb. (NIS2).</p>
+            </div>
+            <div class="offer-row-links"><a class="link" href="kurz-kyberbezpecnost.html">Zobrazit kurz</a></div>
+          </li>
+          <li class="offer-row">
+            <div class="offer-row-copy">
+              <h3>Umělá inteligence ve firmě <span class="badge-soon">Připravujeme</span></h3>
+              <p>Bezpečné a odpovědné používání AI, GDPR a EU AI Act.</p>
+            </div>
+            <div class="offer-row-links"><a class="link" href="kurz-ai.html">Zobrazit kurz</a></div>
+          </li>
+          <li class="offer-row">
+            <div class="offer-row-copy">
+              <h3>AI prakticky</h3>
+              <p>E-book pro úplné začátečníky. Devět kapitol a hotová zadání k vyzkoušení.</p>
+            </div>
+            <div class="offer-row-links"><a class="link" href="ebook.html">Zobrazit e-book</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="team">
-          <div class="person reveal" data-d="1">
-            <img class="avatar" src="assets/andrea.jpg" alt="Mgr. Andrea Procházková" width="184" height="184" loading="lazy" decoding="async" />
-            <h3>Mgr. Andrea Procházková</h3>
-            <div class="role">E-learning &amp; LMS</div>
-            <p>Tvořila e-learningy a spravovala LMS pro Siemens, Organon, Envista a Benu.</p>
-          </div>
-          <div class="person reveal" data-d="2">
-            <img class="avatar" src="assets/nicolas.jpg" alt="Nicolas Jan Sefzig" width="184" height="184" loading="lazy" decoding="async" />
-            <h3>Nicolas Jan Sefzig</h3>
-            <div class="role">IT &amp; kyberbezpečnost</div>
-            <p>Stará se o provoz platformy, zabezpečení dat a technickou stránku kurzů.</p>
+    <!-- ══ PROVOZOVATEL A DALŠÍ KROK ══ -->
+    <section class="section-alt" aria-labelledby="provozovatel-title">
+      <div class="wrap kt-direct">
+        <div>
+          <h2 class="sk-h2 reveal" id="provozovatel-title">Provozovatel</h2>
+          <div class="actions reveal" data-d="1" style="margin-top:28px;">
+            <a class="btn btn-primary" href="kontakt.html">Nezávazná poptávka</a>
+            <a class="link" href="kurzy.html">Zobrazit kurzy</a>
           </div>
         </div>
-
-        <!-- Naše kurzy -->
-        <h2 class="sub reveal" style="margin-top:clamp(60px,8vw,90px);">Naše kurzy</h2>
-        <div class="trio reveal" data-d="1">
-          <div class="panel-card">
-            <h4>Kybernetická bezpečnost pro zaměstnance</h4>
-            <p class="muted" style="margin-top:10px;">
-              Doložitelné školení podle zákona č. 264/2025 Sb. (NIS2).
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="kurz-kyberbezpecnost.html">Zobrazit kurz</a>
-            </p>
-          </div>
-          <div class="panel-card">
-            <h4>Umělá inteligence ve firmě</h4>
-            <p class="muted" style="margin-top:10px;">
-              Bezpečné a odpovědné používání AI, GDPR a EU AI Act.
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="kurz-ai.html">Zobrazit kurz</a>
-            </p>
-          </div>
-          <div class="panel-card">
-            <h4>AI prakticky</h4>
-            <p class="muted" style="margin-top:10px;">
-              E-book pro úplné začátečníky. Devět kapitol a hotová zadání k vyzkoušení.
-            </p>
-            <p style="margin-top:16px;">
-              <a class="link" href="ebook.html">Zobrazit e-book</a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Provozovatel -->
-        <h2 class="sub reveal" style="margin-top:clamp(60px,8vw,90px);">Provozovatel</h2>
-        <div class="panel-card reveal" data-d="1" style="max-width:420px;margin:28px auto 0;text-align:left;">
-          <p><strong>Andrea Procházková</strong></p>
-          <p class="muted" style="margin-top:8px;">IČO: 05595266</p>
-          <p class="muted">Kurzova 2222/16, 155 00 Praha – Stodůlky</p>
-          <p style="margin-top:14px;">
-            <a class="link" data-email href="mailto:myedooofficial@gmail.com">myedooofficial@gmail.com</a>
-          </p>
-        </div>
-
-        <div class="actions reveal" data-d="2" style="justify-content:center;margin-top:clamp(50px,7vw,76px);">
-          <a class="btn btn-primary" href="kontakt.html">Nezávazná poptávka</a>
-          <a class="link" href="kurzy.html">Zobrazit kurzy</a>
-        </div>
+        <dl class="op-list reveal" data-d="1">
+          <div><dt>Jméno</dt><dd>Andrea Procházková</dd></div>
+          <div><dt>IČO</dt><dd>05595266</dd></div>
+          <div><dt>Sídlo</dt><dd>Kurzova 2222/16, 155 00 Praha – Stodůlky</dd></div>
+          <div><dt>E-mail</dt><dd><a class="link" data-email href="mailto:myedooofficial@gmail.com">myedooofficial@gmail.com</a></dd></div>
+        </dl>
       </div>
     </section>
   </main>
